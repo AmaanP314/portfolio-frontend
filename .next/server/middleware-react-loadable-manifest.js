@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"components\\\\HeroSection.js -> react-typewriter-effect\":{\"id\":\"components\\\\HeroSection.js -> react-typewriter-effect\",\"files\":[\"static/chunks/node_modules_react-typewriter-effect_dist_index_js.js\"]}}"
