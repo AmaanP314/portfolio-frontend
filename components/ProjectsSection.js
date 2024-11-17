@@ -72,7 +72,6 @@ const webDevProjects = [
     githubLink: 'https://github.com/your-username/webdev-project1',
     thumbnail: 'https://via.placeholder.com/300',
   },
-  // Add more projects as needed
 ];
 
 const ProjectsSection = () => {
@@ -111,9 +110,7 @@ const ProjectsSection = () => {
   }, [isModalOpen]);
 
   const renderProjectCategory = (categoryTitle, projects) => (
-    // <section className="py-12">
     <section className={`py-12 ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>
-      {/* <h2 className="text-3xl font-extrabold text-center mb-8 text-gray-800">{categoryTitle}</h2> */}
       <h2 className={`text-3xl font-extrabold text-center mb-8 ${theme === 'dark' ? 'text-gray-100' : 'text-gray-800'}`}>
         {categoryTitle}
       </h2>
@@ -122,7 +119,6 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              // className="relative group overflow-hidden border border-gray-300 rounded-lg shadow-lg cursor-pointer"
               className={`relative group overflow-hidden border ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'} rounded-lg shadow-lg cursor-pointer`}
               onClick={() => openModal(project)}
               initial={{ opacity: 0, y: 30 }}
@@ -147,7 +143,6 @@ const ProjectsSection = () => {
   );
 
   return (
-    // <section id="projects" className="bg-white text-gray-900">
     <section id="projects" className={`${theme === 'dark' ? 'bg-gray-800' : 'bg-white'} text-gray-900`}>
       {renderProjectCategory('Machine Learning Projects', mlProjects)}
       {renderProjectCategory('Web Scraping Projects', webScrapingProjects)}
