@@ -32,7 +32,6 @@ const webScrapingProjects = [
     githubLink: 'https://github.com/your-username/webscraping-project1',
     thumbnail: 'https://i.ibb.co/M21vcsH/twitter.png',
   },
-  // Add more projects as needed
   {
     title: 'Twitter Scraper',
     description: 'Brief overview of Web Scraping Project 1.',

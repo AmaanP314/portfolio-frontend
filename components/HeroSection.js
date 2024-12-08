@@ -1,15 +1,14 @@
 import dynamic from "next/dynamic";
 import { useContext } from "react";
-import { ThemeContext } from "../components/ThemeContext"; // Import ThemeContext
+import { ThemeContext } from "../components/ThemeContext"; 
 
 const Typewriter = dynamic(() => import("react-typewriter-effect"), {
   ssr: false,
 });
 
 export default function HeroSection() {
-  const { theme, toggleTheme } = useContext(ThemeContext); // Get theme and toggleTheme from context
-
-  const isLightTheme = theme === "light"; // Check if the current theme is light
+  const { theme, toggleTheme } = useContext(ThemeContext); 
+  const isLightTheme = theme === "light"; 
 
   return (
     <div
